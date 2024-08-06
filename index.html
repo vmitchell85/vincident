@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vincident</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-800 flex flex-col items-center justify-center text-white min-h-screen tracking-wide">
+    <div class="text-3xl">Days since a</div>
+    <div class="uppercase text-5xl mt-4">"Vincident"</div>
+    <div class="uppercase text-7xl mt-12" id="dayCount"></div>
+    <script>
+        // fill #dayCount with the number of days since Mar 1, 2024
+        document.getElementById('dayCount').innerHTML = Math.floor((new Date() - new Date('2024-03-01')) / 86400000);
+    </script>
+</body>
+</html>
